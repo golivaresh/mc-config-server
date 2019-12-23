@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mc-config-server
+  profiles:
+    active: native
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.config: INFO
+#  file: /tmp/logs/mc-config-server/mc-config-server.log

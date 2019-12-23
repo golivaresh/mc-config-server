@@ -1,0 +1,37 @@
+spring:
+  profiles: native
+  cloud:
+    config:
+      server:
+        accept-empty: false
+        native:
+          search-locations: /tmp/${user}/config-repo/{application}/${ENVIRONMENT}/
+          add-label-locations: true
+# HTTP Server
+server:
+  address: 127.0.0.1
+  port: 8888
+  servlet:
+    context-path: /
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      server:
+        accept-empty: false
+        git:
+          uri: ${GIT_URL_CONFIGURATION}
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+          search-paths: '{application}/${ENVIRONMENT}'
+          basedir: /tmp/${user}/config-repo/
+          default-label: master
+          skip-ssl-validation: false
+          timeout: 5
+# HTTP Server
+server:
+  address: 127.0.0.1
+  port: 8888
+  servlet:
+    context-path: /

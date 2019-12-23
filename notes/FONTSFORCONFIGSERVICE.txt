@@ -1,0 +1,12 @@
+https://picodotdev.github.io/blog-bitix/2015/11/configuracion-de-una-aplicacion-en-diferentes-entornos-con-spring-cloud-config/
+https://spring.io/guides/gs/centralized-configuration/
+
+https://spring.io/projects/spring-cloud-config
+https://pivotal.io/application-transformation-recipes/security/encrypt-decrypt-keys-using-spring-cloud-config-server
+
+
+https://github.com/spring-guides/gs-centralized-configuration/tree/master/complete
+
+
+
+https://cloud.spring.io/spring-cloud-config/multi/multi__quick_start.html
