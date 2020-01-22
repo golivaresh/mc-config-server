@@ -24,7 +24,7 @@ spring:
           uri: ${GIT_URL_CONFIGURATION}
           username: ${GIT_USERNAME}
           password: ${GIT_PASSWORD}
-          search-paths: '{application}/${ENVIRONMENT}'
+          search-paths: '{application}/${ENVIRONMENT:dev}'
           basedir: /tmp/${user}/config-repo/
           default-label: master
           skip-ssl-validation: false

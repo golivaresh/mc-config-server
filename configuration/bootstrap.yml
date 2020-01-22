@@ -2,7 +2,7 @@ spring:
   application:
     name: mc-config-server
   profiles:
-    active: native
+    active: ${ENVIRONMENT:native}
 eureka:
   client:
     service-url:
